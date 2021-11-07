@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form validation</title>
+	<script type="text/javascript">
+		
+		function checknull(txt){
+			if(txt.value.length==0)
+				return true;
+			else {
+				return false;
+			}
+		}
+		function isInteger(txt){
+			if((!isNaN(txt.value))&& (parseInt(txt.value)===new Number(txt.value)))
+				return true;
+			else
+				return false;
+		}
+		function StringMatch(txt,reg){
+			return reg.test(txt.value)
+		}
+		function notcheck(radio){
+			var rt=true;
+			for(i=0;i<radio.length;i++){
+				if(radio[i].checked)
+					rt=false;
+			}
+		}
+		function validform(frmName)
+		{
+
+		}
+	</script>
+</head>
+<body>
+	<table align="center">
+		<form name="frmAccount" action="abc.jsp">
+			<tr>
+				<th colspan="2">Registration Form</th>
+			</tr>
+			<tr>
+				<td>fullname: </td>
+				<td><input type="text" name="fullname"></td>
+			</tr>
+			<tr>
+				<td>age: </td>
+				<td><input type="text" name="age"></td>
+			</tr>
+
+			<tr>
+				<td>gender: </td>
+				<td>
+					<input type="radio" name="gender"/> Male
+					<input type="radio" name="gender"/> Female
+				</td>
+			</tr>
+			<tr>
+				<td>phone: </td>
+				<td><input type="text" name="phone"/></td>
+			</tr>
+			<tr>
+				<td>email: </td>
+				<td><input type="text" name="email"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="button" value="Submit" onclick="validform(document.form.frmAccount);">
+					<input type="reset" name="Reset">
+				</td>
+			</tr>
+		</form>
+	</table>
+	
+</body>
+</html>

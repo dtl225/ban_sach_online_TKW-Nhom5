@@ -1,0 +1,391 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+html {
+font-family: sans-serif;
+}
+
+.container-1 {
+overflow: hidden;
+width: 300px;
+margin-left: 900px;
+margin-top: 30px;
+}
+.container-1 input{
+width: 200px;
+height: 25px;
+margin-left:70px;
+}
+.container-1 button{
+float: right;
+width:25px;
+height:25px;
+
+}
+
+.div1{
+border: 5px hidden;
+background-color: #FAECED;
+}
+.ul1{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+.li1{
+float: left;
+}
+.a1{
+text-decoration: none;
+text-align: center;
+display: inline-block;
+padding: 15px 15px;
+color: #4CCA42;
+}
+.logo{
+	width: 200px;
+	height: 101px;
+}
+body{
+}
+#main {
+}
+#header {
+height: 40px;
+background-color:green;
+margin-bottom: 0px;
+
+}
+#nav, .subnav,.subnav1,.subnav2,.subnav3,.subnav4,.subnav5 {
+z-index: 9999;
+list-style-type: none;
+
+
+}
+#nav > li{
+float:left;
+position: relative;
+
+}
+
+#nav {
+position: absolute;
+widows: 140px;
+left: 0;
+
+
+}
+
+#nav > li > a {
+position: relative;
+box-sizing: border-box;
+color: #fff;
+
+
+}
+
+#nav li a{
+text-decoration: none;
+line-height: 40px;
+padding: 0 45px;
+display: block;
+font-size: 15px;
+text-transform: uppercase;
+}
+#nav li:hover >.subnav{
+display: block;
+position: absolute;
+}
+.subnav li:hover >.subnav1{
+display: block;
+}
+.subnav li:hover >.subnav2{
+display: block;
+}
+.subnav li:hover >.subnav3{
+display: block;
+}
+.subnav li:hover >.subnav4{
+display: block;
+}
+.subnav li:hover >.subnav5{
+display: block;
+}
+#nav >.subnav >li:hover a,
+#nav > li:hover > a {
+background-color: peru;
+}
+.subnav .subnav1 li:hover a,
+.subnav > li:hover > a {
+background-color: peru;
+
+}
+.subnav .subnav2 li:hover a,
+.subnav > li:hover > a {
+background-color: peru;
+
+}
+.subnav .subnav3 li:hover a,
+.subnav > li:hover > a {
+background-color: peru;
+
+}
+.subnav .subnav4 li:hover a,
+.subnav > li:hover > a {
+background-color: peru;
+
+}
+.subnav .subnav5 li:hover a,
+.subnav > li:hover > a {
+background-color: peru;
+}
+.subnav{
+width: 290px;
+}
+
+#nav .subnav{
+display: none;
+position: relative;
+background-color: rgba(1, 63, 55, 0.904);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+#nav .subnav a {
+/*display: none; */
+color: #fff;
+padding: 0 20px;
+line-height: 40px;
+}
+.subnav1,.subnav2,.subnav3,.subnav4,.subnav5{
+display: none;
+position: absolute;
+left: 100%;
+width: 300px;
+top: 0;
+background-color:rgba(1, 63, 55, 0.904) ;
+}
+.subnav2{
+margin: 40px 0 0 0;
+}
+.subnav3{
+margin: 80px 0 0 0;
+}
+.subnav4{
+margin: 120px 0 0 0;
+}
+.subnav5{
+margin: 160px 0 0 0;
+}
+#slider {
+min-height: 5000px;
+background-image: url(san.jpg);
+}
+.slide{
+width: 1000px;
+margin: 0 auto;
+overflow: hidden;
+margin-top: 50px;
+border-radius: 10px;
+position: relative;
+}
+.chuyen-slide{
+width: 80000px;
+transition: 1s;
+}
+div.anh img{
+width: 1000px;
+height: 350px;
+float:left;
+}
+.dieuhuong{
+position: absolute;
+font-size: 20px;
+color: white;
+top: 44%;
+padding-left: 20px;
+}
+.dieuhuong i:last-child{
+position: relative;
+left: 930px;
+
+}
+.smallicon{
+	position: relative; /* Canh giữa */
+	margin-top: 80px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+	width: 348px;
+	height: 101px;
+}
+#wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+
+}
+ul.products {
+	list-style: none;
+	display: flex;  
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+	position: relative;
+
+}
+ul.products li {
+	flex-basis: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	width: 52%;
+}
+ul.products li img {
+	max-width: 100%;
+	height: auto;
+} 
+ul.products li .product-top {
+	position: relative;
+	overflow: hidden;
+}
+ul.products li .product-top .product-thumb {
+	display: block;
+}
+ul.products li:hover .product-top .product-thumb img {
+	filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img{
+	display: block;
+
+}
+ul.products li .product-top a.buy-now {
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: #fff;
+	padding: 10px 0px;
+	position: absolute;
+	bottom: -36px;
+	width: 100%;
+	transition: 0.25s ease-in-out;
+	opacity: 0.85;
+}
+ul.products li:hover a.buy-now {
+	bottom: 0px;
+}
+ul.products li .product-info {
+	padding: 10px 0px;
+}
+ul.products li .product-info a{
+	display: block;
+	text-decoration: none;
+
+}
+ul.products li .product-info a.product-cat {
+	font-size: 11px;
+	text-transform: uppercase;
+	color: rgb(70, 69, 69);
+	padding: 3px 0px;
+
+}
+ul.products li .product-info a.product-name {
+	color: rgb(11, 11, 190);
+	padding: 3px 0px;
+	margin-left: 20px;
+	color: green;
+	font-size: 20px;
+	text-align: center;
+}
+ul.products li .product-info .product-price {
+	color: #111;
+	padding: 2px 0px;
+	font-weight: 600;
+		margin-left: 20px;
+}
+
+#content {
+}
+.container{
+max-width: 1170px;
+margin: auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+ul{
+list-style: none;
+}
+.footer{
+background-color: #FAECED;
+padding: 70px 0;
+}
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+.footer-col h4{
+font-size: 18px;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: bold;
+position: relative;
+color: #4CCA42;
+}
+.footer-col h4::before{
+content: '';
+position: absolute;
+left: 0px;
+bottom: -10px;
+background-color: #e91e63;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
+}
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+text-decoration: none;
+font-weight: 300px;
+color: #4CCA42;
+display: block;
+transition: all 0.3 ease;
+}
+.footer-col ul li a:hover{
+color: #FE669A;
+padding-left: 8px;
+}
+.footer-col .social_links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+font-size: 30px;
+transition: all 0.3s ease;
+}
+.footer-col .social_links a:hover{
+color: #FE669A;
+background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+.footer-col {
+width: 25%;
+margin-bottom: 30px;
+}}
+@media(max-width: 574px){
+.footer-col {
+width: 100%;
+margin-bottom: 30px;
+}
+}
